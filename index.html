@@ -6,17 +6,26 @@
   <title>Saman Badakhshan Resume</title>
   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
   <style media="screen">
-
+    /* * {
+      box-sizing: border-box;
+    } */
     body {
-      font-family: Calibri, sans-serif
+      font-family: Calibri, sans-serif;
     }
 
     h1 {
-      color: DeepSkyBlue;
+      color: #33ccff;
       font-size: 20pt;
     }
 
+    h2 {
+      color: #262626;
+      font-size: 14pt;
+      font-style: normal;
+    }
+
     h3 {
+      color: #262626;
       font-size: 12pt;
       font-style: italic;
     }
@@ -27,7 +36,11 @@
     }
 
     hr {
-      background-color: DeepSkyBlue;
+      background-color: #33ccff;
+    }
+
+    p {
+      text-align: justify;
     }
 
     td {
@@ -39,44 +52,156 @@
       border-radius: 50%;
       box-sizing: border-box;
       width: 200px;
-      border: 1px solid DeepSkyBlue;
+      border: 2px solid #33ccff;
     }
 
     .verticalLine {
-      border-left: 1px solid DeepSkyBlue;
-      height: 175px;
+      border-left: 2px solid #33ccff;
     }
 
     .horizontalLine {
-      border-top: 1px solid DeepSkyBlue;
+      border-top: 2px solid #33ccff;
       width: 90%;
     }
+
+    .content {
+      min-width: 1000px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column_left {
+      /* background-color: lightgrey; */
+      float: left;
+      width: 53%;
+      padding: 10px;
+    }
+
+    .column_right {
+      /* background-color: grey; */
+      float: left;
+      width: 40%;
+      padding: 10px;
+      border-left: solid;
+      border-left-width: 2px;
+      border-left-color: #33ccff;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column_container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .tableCol
+    {
+      vertical-align: top;
+    }
+
   </style>
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td>
-        <img class="avatar"
-          src="saman.jpg"
-          alt="">
-      </td>
-      <td>
-        <h1>Saman Badakhshan</h1>
-        <h3>Senior iOS Developer</h3>
-      </td>
-      <td>
-        <hr class="verticalLine">
-      </td>
-      <td>
-        <li>samanb@me.com</li>
-        <li>+447918150792</li>
-        <li>22a Colless Road, London, N15 4NR</li>
-      </td>
-    </tr>
-  </table>
-  <hr class="horizontalLine">
+  <div class="content">
+    <table style="padding: 10px;">
+      <tr>
+        <td>
+          <img class="avatar" src="saman.jpg" alt="">
+        </td>
+        <td>
+          <h1>Saman Badakhshan</h1>
+          <h3>Senior iOS Developer</h3>
+        </td>
+        <td>
+          <hr class="verticalLine" size=17px>
+        </td>
+        <td>
+          <li>samanb@me.com</li>
+          <li>+447918150792</li>
+          <li>
+            <table>
+              <tr>
+                22a Colless Road
+              </tr>
+              <tr>
+                London, N15 4NR
+              </tr>
+            </table>
+          </li>
+        </td>
+      </tr>
+    </table>
+    <hr class="horizontalLine">
+    <table style="padding: 10px;">
+      <tr>
+        <td class="tableCol" width=55.5%>
+          <h2>ABOUT ME</h2>
+          <p>I am a skilled and knowledgeable software engineer
+            specialized in iOS development with over 8 years of experience in
+            developing consumer applications. I have had a wide range of exposure
+            to app development in the industry, right the way from concept
+            design and prototyping to development of core application systems,
+            complex user interfaces, and iTunes connect app administration
+            and deployment.</p>
+        </td>
+        <td>
+          <hr class="verticalLine" size=200>
+        </td >
+        <td class="tableCol" width=45.5%>
+          <h2>LANGUAGES</h2>
+          <table>
+            <tr>
+              <td>
+                <li>Swift</li>
+                <li>Objective-c</li>
+                <li>Java</li>
+                <li>C/C++</li>
+              </td>
+              <td>
+                <li>JSON</li>
+                <li>XML</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- <div class="column_container">
+      <div class="row">
+        <div class="column_left">
+          <h2>ABOUT ME</h2>
+          <p>I am a skilled and knowledgeable software engineer specialized in iOS development with over 8 years of experience in developing consumer applications. I have had a wide range of exposure to app development in the industry, right the way from concept design and prototyping to development of core application systems, complex user interfaces, and iTunes connect app administration and deployment.</p>
+        </div>
+        <div class="column_right">
+          <h2 style="margin: 0px;">LANGUAGES</h2>
+          <table>
+            <tr>
+              <td>
+                <li>Objective-c</li>
+                <li>Swift</li>
+                <li>Java</li>
+                <li>C/C++</li>
+              </td>
+              <td>
+                <li>Objective-c</li>
+                <li>Swift</li>
+                <li>Java</li>
+                <li>C/C++</li>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div> -->
+    </div>
 </body>
 
 </html>
