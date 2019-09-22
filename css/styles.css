@@ -1,6 +1,132 @@
-body {
-  background-color: grey;
+:root {
+  --highlight-color: #30c9ff;
 }
+body {
+  background-color: #e6f8ff;
+}
+
+h1 {
+  color: #333333;
+  font-size: 20pt;
+}
+
+h2 {
+  color: #333333;
+  font-size: 14pt;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+li {
+  font-size: 11pt;
+  font-style: normal;
+  text-align: justify;
+}
+
+hr {
+  background-color: var(--highlight-color);
+}
+
+p {
+  font-size: 11pt;
+  text-align: justify;
+}
+
 td {
-  padding: 20px
+  padding: 15px
+}
+
+.role {
+  padding-left: 10px;
+}
+
+.sectionPadding {
+  padding: 20px;
+}
+
+.avatar {
+  display: block;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 200px;
+  border: 1px solid var(--highlight-color);
+}
+
+.verticalLine {
+  border-left: 1px solid var(--highlight-color);
+}
+
+.horizontalLine {
+  border-top: 1px solid var(--highlight-color);
+  width: 90%;
+}
+
+.content {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  width: 1000px;
+  margin: auto;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column_container {
+  width: 95%;
+  margin: auto;
+}
+
+.tableCol {
+  vertical-align: top;
+}
+
+.page_padding {
+  padding: 40px;
+}
+
+.job_heading {
+  overflow: hidden;
+}
+
+.app_icon {
+  margin-right: 10px;
+  display: block;
+  border-radius: 30%;
+  box-sizing: border-box;
+  width: 50px;
+  float: left;
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.project_heading {
+  font-size: 11pt;
+  float: right;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.company_heading {
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 15px;
+  margin: 11px 0 0 0;
+}
+
+.date_heading {
+  font-size: 10pt;
+  font-style: italic;
+  margin-left: 15px;
+  margin: 0 0 0 0;
 }
