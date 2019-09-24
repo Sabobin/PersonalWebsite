@@ -116,6 +116,13 @@ td {
   font-weight: bold;
 }
 
+.education_heading {
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  margin: 11px 0 0 0;
+}
+
 .company_heading {
   font-size: 12pt;
   font-style: normal;
